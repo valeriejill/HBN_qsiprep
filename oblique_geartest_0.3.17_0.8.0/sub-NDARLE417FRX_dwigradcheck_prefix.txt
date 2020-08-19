@@ -1,0 +1,61 @@
+dwigradcheck: 
+dwigradcheck: Note that this script makes use of commands / algorithms that have relevant articles for citation. Please consult the help page (-help option) for more information.
+dwigradcheck: 
+dwigradcheck: Generated scratch directory: /Users/valeriesydnor/Documents/ResearchProjects/HBN/qsiprep/oblique_gear_testing/sub-NDARLE417FRX/pre_oblique_fix/ses-HBNsiteRU/dwi/dwigradcheck-tmp-GBK9H6/
+Command:  mrconvert /Users/valeriesydnor/Documents/ResearchProjects/HBN/qsiprep/oblique_gear_testing/sub-NDARLE417FRX/pre_oblique_fix/ses-HBNsiteRU/dwi/sub-NDARLE417FRX_ses-HBNsiteRU_acq-64dir_space-T1w_desc-preproc_dwi.nii.gz /Users/valeriesydnor/Documents/ResearchProjects/HBN/qsiprep/oblique_gear_testing/sub-NDARLE417FRX/pre_oblique_fix/ses-HBNsiteRU/dwi/dwigradcheck-tmp-GBK9H6/data.mif -strides 0,0,0,1 -datatype float32
+dwigradcheck: Changing to scratch directory (/Users/valeriesydnor/Documents/ResearchProjects/HBN/qsiprep/oblique_gear_testing/sub-NDARLE417FRX/pre_oblique_fix/ses-HBNsiteRU/dwi/dwigradcheck-tmp-GBK9H6/)
+Command:  mrinfo data.mif -grad grad.b -export_grad_fsl bvecs bvals
+Command:  dwi2mask data.mif mask.mif -grad grad.b
+dwigradcheck: [100%] Testing gradient table alterations (48 of 48)
+Mean length     Axis flipped    Axis permutations    Axis basis
+66.70         none                (0, 1, 2)           scanner
+65.85         none                (0, 1, 2)           image
+38.08            1                (0, 1, 2)           image
+38.00            1                (0, 1, 2)           scanner
+36.16         none                (0, 2, 1)           scanner
+35.89            0                (0, 2, 1)           image
+35.79            0                (0, 2, 1)           scanner
+35.53         none                (0, 2, 1)           image
+33.03            1                (2, 1, 0)           image
+32.81         none                (2, 1, 0)           scanner
+32.78            2                (1, 0, 2)           scanner
+32.70            2                (0, 1, 2)           image
+32.62            2                (0, 1, 2)           scanner
+32.61            1                (2, 1, 0)           scanner
+32.48         none                (2, 1, 0)           image
+32.38         none                (1, 0, 2)           image
+32.31         none                (1, 0, 2)           scanner
+32.17            2                (1, 0, 2)           image
+30.79            0                (0, 1, 2)           scanner
+30.41            0                (0, 1, 2)           image
+29.19            1                (0, 2, 1)           scanner
+28.61         none                (1, 2, 0)           scanner
+28.56            2                (0, 2, 1)           image
+27.58            1                (0, 2, 1)           image
+27.49            0                (1, 2, 0)           image
+27.26            2                (0, 2, 1)           scanner
+26.10            1                (1, 0, 2)           scanner
+26.03            0                (1, 0, 2)           image
+25.94            0                (1, 0, 2)           scanner
+25.92         none                (2, 0, 1)           scanner
+25.79            2                (1, 2, 0)           scanner
+25.73            2                (2, 0, 1)           image
+25.51            1                (1, 2, 0)           image
+25.43            1                (1, 0, 2)           image
+25.39            1                (2, 0, 1)           image
+25.29            1                (1, 2, 0)           scanner
+25.29            0                (2, 0, 1)           scanner
+25.28            0                (1, 2, 0)           scanner
+25.28            0                (2, 0, 1)           image
+25.19            1                (2, 0, 1)           scanner
+25.11         none                (1, 2, 0)           image
+25.09            2                (2, 1, 0)           image
+24.98            2                (1, 2, 0)           image
+24.86            0                (2, 1, 0)           image
+24.75            2                (2, 0, 1)           scanner
+24.73            2                (2, 1, 0)           scanner
+24.64         none                (2, 0, 1)           image
+24.43            0                (2, 1, 0)           scanner
+dwigradcheck: Changing back to original directory (/Users/valeriesydnor/Documents/ResearchProjects/HBN/qsiprep/oblique_gear_testing/sub-NDARLE417FRX/pre_oblique_fix/ses-HBNsiteRU/dwi)
+dwigradcheck: Deleting scratch directory (/Users/valeriesydnor/Documents/ResearchProjects/HBN/qsiprep/oblique_gear_testing/sub-NDARLE417FRX/pre_oblique_fix/ses-HBNsiteRU/dwi/dwigradcheck-tmp-GBK9H6/)
+
